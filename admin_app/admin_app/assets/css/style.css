@@ -1,0 +1,118 @@
+/** TABLE STYLING **/
+    .m-b-15px{ margin-bottom:15px; }
+    .w-5-pct{ width:5%; }
+    .w-10-pct{ width:10%; }
+    .w-15-pct{ width:15%; }
+    .w-20-pct{ width:20%; }
+    .w-30-pct{ width:30%; }
+    .display-none{ display:none; }
+    .padding-bottom-2em{ padding-bottom:2em; }
+    .width-30-pct{ width:30%; }
+    .width-40-pct{ width:40%; }
+    .overflow-hidden{ overflow:hidden; }
+    .margin-right-1em{ margin-right:1em; }
+    .right-margin{ margin:0 .5em 0 0; }
+    .margin-bottom-1em { margin-bottom:1em; }
+    .margin-zero{ margin:0; }
+    .text-align-center{ text-align:center; }
+    .float_left{float: left;}
+    .table-striped>tbody>tr:nth-of-type(odd){background-color:#EDF0F3;}
+
+    /* Curved table */
+    .table-curved {
+        border-collapse: separate;
+        border: solid #ddd 1px;
+        border-radius: 6px;
+        border-left: 0px;
+        border-top: 0px;
+    }
+    .table-curved > thead:first-child > tr:first-child > th {
+        border-bottom: 0px;
+        border-top: solid #ddd 1px;
+     }
+    .table-curved td, .table-curved th {
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+    }
+    .table-curved > :first-child > :first-child > :first-child {border-top-left-radius: 6px;}
+    .table-curved > :first-child > :first-child > :last-child {border-top-right-radius: 6px;}
+    .table-curved > :last-child > :last-child > :first-child {border-bottom-left-radius: 6px;}
+    .table-curved > :last-child > :last-child > :last-child {border-bottom-right-radius: 6px;}
+    /* Curved table */
+/** TABLE STYLING **/
+
+/** FONTS  **/
+    /* Needed when font is removed form google font database */
+    @font-face {
+        font-family: "Roboto";
+        src: url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
+    }
+    @font-face {
+        font-family: "Roboto_bold";
+        font-weight: bold;
+        src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+    }
+    @font-face {
+        font-family: "Titillium Web";
+        src: url("../fonts/TitilliumWeb/TitilliumWeb-Regular.ttf") format("ttf"),
+    }
+    @font-face {
+        font-family: "Titillium bold";
+        src: url("../fonts/TitilliumWeb/TitilliumWeb-Bold.ttf") format("ttf"),
+    }
+    /* Needed when font is removed form google font database */
+
+    h1{font-family: 'Titillium bold', sans-serif;}
+    p{font-family: 'Roboto', sans-serif;}
+/** FONTS **/
+
+/** Navigation OVERRIDES **/
+    .navbar-brand>img{
+        width: 200px;
+        margin-top: -23px;
+    }
+    .navbar-default{
+        background-color: #18588E;
+        margin: -2px;;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #fff;
+    }
+/** Navigation **/
+
+.page-header{
+    border-bottom: none;
+}
+
+/** BUTTONS **/
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus,.btn-primary:active:focus{
+        background-color: #076EC3;
+        border-color: #076EC3;
+    }
+
+    .btn-info, .btn-info:hover, .btn-info:active, .btn-info:focus,.btn-info:active:focus{
+        background-color: #F2C76C;
+        border-color: #F2C76C;
+    }
+    .btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:focus,.btn-danger:active:focus {
+        background-color:#C3072B;
+        border-color:#C3072B;
+    }
+    .button-margin{
+        margin-top: -75px;
+    }
+/** BUTTONS **/
+
+
+/** ICONS **/
+.glyphicon-search{
+    color: #076EC3;
+}
+/** ICONS **/
+
+
+/** TABLE STYLING **/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dieren</title>
+		<link rel="stylesheet" href="style/style.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="dieren.html">Dieren</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<div class="topnav-right">
+						<li><a href="login.html">Login</a></li>
+					</div>
+				</ul>
+			</nav>
+        </header>
+        <div class="filter">
+            <table id="filter_table"><form action="dieren_user.html">
+                <thead>
+                    <th>Ik zoek:</th>
+                    <th>Ras:</th>
+                    <th>Geslacht:</th>
+                </thead>
+                <tr>
+                    <td>  
+                        <!-- Idee: een filter op basis van beschikbaarheid? -->
+                        <!-- FIX: Javascript array loopen om gegevens te tonen -->
+                        <select name="dieren">
+                            <option value="none">geen voorkeur</option>
+                            <option value="kat">kat</option>
+                            <option value="hond">hond</option>
+                            <option value="olifant">olifant</option>
+                        </select>
+                    </td>
+                    <td>
+                        <!-- FIX: Javascript, sql, zorgen dat de juiste rassen worden getoond van het juiste dier -->
+                        <select name="ras">
+                            <option value="none">geen voorkeur</option>
+                            <option value="ras1">ras1</option>
+                            <option value="ras2">ras2</option>
+                            <option value="ras2">ras3</option>
+                        </select>
+                    </td>
+                    <td>
+                         <select name="geslacht">
+                            <option value="">geen voorkeur</option>
+                            <option value="mannelijk">mannelijk</option>
+                            <option value="vrouwelijk">vrouwelijk</option>
+                        </select>
+                    </td>
+                </tr>
+            </form></table>
+        </div>
+
+		<div class="container">
+			<div class="panel"> <!--This panel can be hidden when details page is requested-->
+			</div>
+        </div>
+        
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="textTest"></p>
+            </div>
+        </div>
+
+	</body>
+	<script type="text/javascript" src="js/javascript_user.js"></script>
+</html>

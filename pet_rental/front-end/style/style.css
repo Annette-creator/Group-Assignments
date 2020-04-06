@@ -1,0 +1,378 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+/** NAVIGATION **/
+
+nav{
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.topnav-right {
+  float: right;
+}
+/** NAVIGATION **/
+
+
+
+/** INDEX PAGE **/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #333;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.text {
+  color: #333;
+  width: 100%;
+  text-align: left;
+  margin-left: 8%;
+}
+
+.sub_text {
+  color: rgb(107, 107, 107);
+  width: 100%;
+  text-align: left;
+  margin-left: 8%;
+}
+
+p {
+  color: rgb(107, 107, 107);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+img .slider-img{
+  width: 100%;
+  height: 400px;
+}
+.image-text{
+  position: absolute;
+  top: 62%;
+  right: 3%;
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  border-radius: 8px;
+  border-bottom: 0.5px solid #333;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container .btn {
+  margin: 15px 0px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  top: 44%;
+  right: 8%;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/** MAIN **/
+.main {
+  float: left;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/** MAIN **/
+
+/** FOOTER **/
+footer {
+  height: 160px;
+  width: 100%;
+  float: left;
+  background-color: #333;
+}
+h2.footer{
+  color: rgb(180, 180, 180);
+}
+.footer1 {
+  float: left;
+  width: 33.33333%;
+  position: relative;
+  text-align: center;
+}
+.footer2 {
+  float: left;
+  width: 33.33333%;
+  position: relative;
+  text-align: center;
+}
+.footer3 {
+  float: left;
+  width: 33.33333%;
+  position: relative;
+  text-align: center;
+}
+.two{
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.two>a{
+  margin: 10px;
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+}
+/** FOOTER **/
+/** INDEX PAGE **/
+
+
+
+/** DIEREN PAGE **/
+/** TABLE **/
+h2.animals{
+  text-align: center;
+  margin-bottom: 50px;
+}
+th{
+  width: 250px;
+}
+td{
+  width: 145px;
+  text-align: center;
+}
+/** TABLE **/
+
+.pagetitle{
+  text-align: center;
+}
+input[type="text"]:disabled {
+  background: rgb(219, 219, 219);
+}
+.select_animal{
+  background-color: white;
+  height: 40px;
+}
+
+/** BUTTONS **/
+input[type=button] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: arial;
+  margin: 0 15px 15px 0;
+}
+/** BUTTONS **/
+/** DIEREN PAGE **/
+
+/** CONTACT PAGE **/
+form{
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  width: 524px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: arial;
+}
+input[type=submit]:hover {
+  background-color: #111;
+}
+
+input:invalid {
+  border: 1px dotted rgb(180, 0, 0);
+}
+
+input[type=password]:invalid {
+  border: 1px dotted rgb(180, 0, 0);
+}
+
+input:valid {
+  border: 1px solid rgb(151, 180, 151);
+}
+
+input[type=password]:invalid:focus {
+  background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(180,0,0,0.17) 100%);;
+}
+
+label { 
+  display: block; 
+  width: 100%; 
+}
+/** CONTACT PAGE **/
+
+
+/** LOGIN **/
+input[type=password i], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#register_link {
+  color: black;
+  font-size: small;
+  margin-left: 2%;
+}
+input[type="radio"] {
+  margin-right: 2%;
+}
+.gender_radio {
+  margin-top: 2%;
+}
+/** LOGIN **/
+
+
+/** SHOPPING_CART **/
+.filter {
+  background-color: gray;
+  padding: 30px 12px 40px 80px; 
+  font-size: 18px;
+  width: 100%; 
+  height: 100px;  
+}
+#filter_table {
+  border-spacing: 12px; 
+}
+/** FIX: IMG width and height responsive maken **/
+img .shopping{
+  width: 300px; 
+  max-height: 200px;
+}
+/** Gedeelte voor modal **/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 40%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/** SHOPPING_CART **/
