@@ -21,7 +21,7 @@ $(document).ready(function() {
         <table class="read-one-book-image">
           <tr>
             <th class='w100-pct'>
-              <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Smiley face" height="400" width="250">
+              <img src="assets/images/book-cover_images/zonder-gezicht_robert-bryndza.jpg" alt="Books" height="400" width="250">
             </th>
           </tr>
           <tr>
@@ -47,8 +47,7 @@ $(document).ready(function() {
           </tr>
           <tr>
               <th class='w-15-pct'>Naam schrijver</th>
-              <td>` +data.author_id +`</td>
-              <!-- NEEDED WHEN JOINS ARE FIXED <td>` + data.first_name + " " + data.last_name + `</td>-->
+              <td>` + data.first_name + " " + data.last_name + `</td>
           </tr>
           <tr>
               <th class='w-15-pct'>Titel boek</th>
@@ -56,15 +55,17 @@ $(document).ready(function() {
           </tr>
           <tr>
               <th class='w-15-pct'>Genre</th>
-              <td>` +data.genre_id +`</td>
+              <td>` +data.category +`</td>
           </tr>
+          <!--
           <tr>
               <th class='w-15-pct'>Status</th>
               <td>` +data.status +`</td>
           </tr>
+          -->
           <tr>
               <th class='w-10-pct'>Samenvatting</th>
-              <td>` +data.description +`</td>
+              <td>` + data.description +`</td>
           </tr>
         </table>`;
 
@@ -72,7 +73,7 @@ $(document).ready(function() {
       $("#page-content").html(read_one_product_html);
 
       // chage page title
-      changePageTitle(data.title + " - " + data.author_id);
+      changePageTitle(data.title + " - " + data.first_name + " " + data.last_name);
     });
   });
 });

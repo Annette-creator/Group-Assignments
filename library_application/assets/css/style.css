@@ -94,6 +94,7 @@
   color: #076ec3;
   margin: 0 0 0 15px;
   font-size: 16px;
+  cursor: pointer;
 }
 /** TABLE STYLING **/
 
@@ -139,7 +140,7 @@ li {
 }
 .navbar-brand > img {
   width: 100px;
-  margin-top: -6px;
+  margin-top: 0px;
 }
 .navbar-default {
   background-color: #d8d8d8;
@@ -148,6 +149,9 @@ li {
 .navbar-default .navbar-nav > li > a {
   color: #000;
   font-family: "Roboto", sans-serif;
+}
+.top-bar{
+  height: 60px;
 }
 /** Navigation **/
 
@@ -209,6 +213,7 @@ li {
 .buttons {
   margin: 5px 0px;
 }
+.change-image{margin: 20px 0 0 0;}
 
 input[type="file"] {
   color: #707070;

@@ -26,8 +26,8 @@ function showProductsFirstPage() {
   $('#pagination-container').pagination({
     dataSource: json_url,
     locator: 'data',
-    totalNumber: 120,
-    pageSize: 20,
+    totalNumber: 15,
+    pageSize: 5,
     callback: function(data, pagination) {
         showProducts(json_url);
         // $('#page-content').html(html);

@@ -53,8 +53,8 @@ $.fn.serializeObject = function(){
     var o = {};
     var a = this.serializeArray();
     $.each(a, function() {
-        console.log(this.name + " <-- 'this.name' in serializeObject");
-        console.log(this.value + " <-- 'this.value' in serializeObject");
+        // console.log(this.name + " <-- 'this.name' in serializeObject");
+        // console.log(this.value + " <-- 'this.value' in serializeObject");
         if (o[this.name] !== undefined) {
             if (!o[this.name].push) {
                 o[this.name] = [o[this.name]];
@@ -64,14 +64,5 @@ $.fn.serializeObject = function(){
             o[this.name] = this.value || null;
         }
     });
-    console.log(o.author_id + " <-- o.author_id.value from serializeObject");
-
-    if(o.author_id === 2){
-        console.log("o.author_id ==> integer");
-    }
-    if(o.author_id === "2"){
-        console.log("o.author_id ==> string");
-    }
-
     return o;
 };

@@ -1,3 +1,4 @@
+
 // product list html
 function readProductsTemplate(data, keywords){
     console.log("testing data in books", data)
@@ -24,14 +25,14 @@ function readProductsTemplate(data, keywords){
         <table id="sort_tabel" class="table table-curved table-striped">
             <thead>
             <tr>
-                <th class='w-5-pct'>ID</th>
+                <th onclick="sortTable(0)" class='w-10-pct'>ID<span class="glyphicon glyphicon-sort-by-order"></span></th>
                 <th onclick="sortTable(1)" class='w-10-pct'>IBSN<span class="glyphicon glyphicon-sort-by-order"></span></th>
                 <th onclick="sortTable(2)" class='w-15-pct'>Auteur<span class="glyphicon glyphicon-sort-by-alphabet"></span></th>
                 <th onclick="sortTable(3)" class='w-15-pct'>Titel<span class="glyphicon glyphicon-sort-by-alphabet"></span></th>
                 <th class='w-10-pct'>Genre</th>
                 <th class='w-30-pct'>Synopsis</th>
-                <th class='w-10-pct'>Status</th>
-                <!-- <th class='w-15-pct'>Omslag</th> --><!-- NEEDED LATER -->
+                <!--<th class='w-10-pct'>Status</th>--><!-- NEEDED LATER -->
+                <th class='w-15-pct'>Omslag</th> 
                 <th class='w-10-pct text-align-center'></th>
             </tr>
         </thead>`;
@@ -45,9 +46,11 @@ function readProductsTemplate(data, keywords){
                 <td>` + data.isbn + `</td>
                 <td>` + data.first_name + " " + data.last_name + `</td>
                 <td>` + data.title + `</td>
-                <td>` + data.genre_id + `</td>
+                <td>` + data.category + `</td>
                 <td>` + data.description + `</td>
-                <td>` + data.status + `</td>
+                <td> <img src="assets/images/book-cover_images/zonder-gezicht_robert-bryndza.jpg" alt="Books" height="200" width="140">
+                </td>
+                <!--<td>` + data.status + `</td>--><!-- NEEDED LATER -->
                 
                 <!-- 'action' buttons -->
                 <td>
@@ -73,9 +76,6 @@ function readProductsTemplate(data, keywords){
         
     // inject to 'page-content' of our app
     $("#page-content").html(read_products_html);
-    
-
-
 }                
 
 //NEEDED LATER!!!!
